@@ -1,0 +1,108 @@
+.ai-detection-viewer {
+  height: fit-content;
+}
+
+.section-heading {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.overall-score-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--dark-bg);
+  border-radius: 8px;
+}
+
+.score-circle {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 8px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-bg);
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.score-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.score-interpretation h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.score-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.analysis-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background: var(--dark-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.heatmap-section {
+  margin-top: 2rem;
+}
+
+.heatmap-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-description {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .overall-score-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .analysis-metrics {
+    grid-template-columns: 1fr;
+  }
+}
